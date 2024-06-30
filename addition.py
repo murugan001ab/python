@@ -1,3 +1,3 @@
 print("addition")
-a=10
-b=20
+a=25
+b=15

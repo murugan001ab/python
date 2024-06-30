@@ -1,4 +1,4 @@
 a=10
 b=20
-c=a+b
+c=a+b #addtion
 print(f'addition of{a}and{b} is:',c)

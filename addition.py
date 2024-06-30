@@ -1,3 +1,5 @@
 print("addition")
-a=25
-b=15
+a=20
+b=10
+print(a+b)
+print('helo')

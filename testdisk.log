@@ -1,0 +1,39 @@
+
+
+Mon Apr 21 14:46:37 2025
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.11.2-amd64 (#1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15)) x86_64
+Compiler: GCC 14.2
+ext2fs lib: 1.47.2, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.5
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/nvme0n1 - 512 GB / 476 GiB - CHS 488386 64 32, sector size=512 - SAMSUNG MZAL8512HDLU-00BL2, S/N:S77MNF1X461687
+
+Partition table type (auto): EFI GPT
+Disk /dev/nvme0n1 - 512 GB / 476 GiB - SAMSUNG MZAL8512HDLU-00BL2
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1000215215 (expected 1000215215)
+hdr_lba_start=34
+hdr_lba_end=1000215182
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 3 P MS Reserved            802807808  802840575      32768 [Microsoft reserved partition]
+ 1 P EFI System                  2048    1050623    1048576
+ 2 P Linux filesys. data      1050624  802807807  801757184
+ 3 P MS Reserved            802807808  802840575      32768 [Microsoft reserved partition]
+ 4 P MS Data                802840576  996898815  194058240 [Basic data partition]
+     NTFS, blocksize=4096, 99 GB / 92 GiB
+ 5 P Windows Recovery Env   996898816  998213631    1314816
+ 6 P Linux Swap             998215680 1000214527    1998848
+
+TestDisk exited normally.

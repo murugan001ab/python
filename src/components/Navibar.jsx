@@ -117,7 +117,7 @@ export const ProfileDropdown = ({setIsLogged,show}) => {
   
   {open && (
           <div className={`dropdown-menu ${show ? 'show' : ''}`}>
-            <div className="dropdown-item"><a to="/account" >Account</a></div>
+            <div className="dropdown-item"><Link to="/account" >Account</Link></div>
             <div className="dropdown-item logout" onClick={()=>onLogout()} >Log Out</div>
           </div>
         )}

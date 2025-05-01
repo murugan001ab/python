@@ -1,24 +1,18 @@
-import { Outlet, useLocation } from "react-router-dom"
-import {Footer} from "../components/Footer"
-import { Navibar } from "../components/Navibar"
-import Login from "../pages/Login"
-import Register from "../pages/Register"
-
-
+import { Outlet, useLocation } from "react-router-dom";
+import { Footer } from "../components/Footer";
+import { Navibar } from "../components/Navibar";
+import "./rootlayout.css";
 
 export const RootLayout = () => {
-
-    const location=useLocation();
+  const location = useLocation();
 
   return (
-    <>
-    {/* {location.pathname="/login" && <Login/>  } */}
-    {/* {location.pathname="/register" && <Register/>  } */}
-
-    <Navibar/>
-    <Outlet/>
-    <Footer/>
-    </>
-  )
-}
-
+    <div className="layout-container">
+      <Navibar />
+      <main className="main-content">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};

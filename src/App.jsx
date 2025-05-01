@@ -2,7 +2,7 @@ import { createBrowserRouter, createRoutesFromElements,Route, RouterProvider } f
 
 import { RootLayout } from "./Layout/RootLayout";
 import Home from "./components/Home";
-import { BuildResume } from "./components/BuildResume";
+// import { BuildResume } from "./components/BuildResume";
 import "./App.css";
 import { Template } from "./components/Template";
 import Login from "./pages/Login";
@@ -11,6 +11,8 @@ import Register from "./pages/Register";
 import { Page404 } from "./components/Page404";
 
 import "./responsive.css"
+import Account from "./pages/Account";
+import ResumeLayout from "./Layout/ResumeLayout";
 
 function App() {
 
@@ -18,10 +20,9 @@ function App() {
     <>
     <Route path="/" element={<RootLayout/>}>
       <Route index element={<Home/>} />
-      <Route path="builresume" element={<BuildResume/>} />
+      <Route path="builresume" element={<ResumeLayout/>} />
       <Route path="template" element={<Template/>}/>
-      {/* <Route path="login" element={<Login/>}/>
-      <Route path="register" element={<Register/>}/> */}
+      <Route path="/account" element={<Account/>}/>
       <Route path="*" element={<Page404/>}/>
     </Route>
     <Route path="/login" element={<Login/>} />
